@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML</title>
+  </head>
+  <body>
+    <section>
+      <h2>Anime Genre</h2>
+      <ol type="1">
+        <li>
+          Action
+          <ol type="a">
+            <li>
+              Shonen
+              <ol type="i">
+                <li>Bleach</li>
+                <li>Dragon Ball</li>
+              </ol>
+            </li>
+            <li>Seinen</li>
+            <li>Mecha</li>
+          </ol>
+        </li>
+        <li>
+          Adventure
+          <ol type="a">
+            <li>
+              Fantasy
+              <ol type="i">
+                <li>Fairy Tail</li>
+                <li>One Piece</li>
+              </ol>
+            </li>
+            <li>Science Fiction</li>
+            <li>Historical</li>
+          </ol>
+        </li>
+        <li>
+          Comedy
+          <ol type="a">
+            <li>Romantic Comedy
+              <ol type="i">
+                <li>Toradora!</li>
+                <li>My Dress-Up Darling</li>
+              </ol>
+            </li>
+            <li>Slice of Life</li>
+            <li>Parody</li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Anime charcters Table</h2>
+      <table border = "1">
+        <thead>
+          <tr>
+            <th>Character Name</th>
+            <th>Anime</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tanjiro</td>
+            <td>Demon Slayer</td>
+            <td>Protagonist</td>
+          </tr>
+          <tr>
+            <td>Goku</td>
+            <td>Dragon Ball</td>
+            <td>Hero</td>
+          </tr>
+          <tr>
+            <td>Naruto</td>
+            <td>Naruto</td>
+            <td>Hero</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </section>
+
+
+    <section>
+      <h2>Anime Media</h2>
+      <h3>Demon slayer</h3>
+      <img src="image/demon-slayer-5k-wallpaper-5120x2880-26606.jpg"
+      alt="Demon Slayer Poster"
+      width="300">
+
+      <h3>Anime teleport sound</h3>
+      <audio controls>
+        <source src="assets/592787__euphrosyyn__anime_teleport_sounds.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Anime  video</h3>
+      <video  width="640" height="360" controls>
+        <source src="assets/Demon Slayer - S2E4 (59).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        
+    </section>
+
+    <section>
+      <h2>Anime Form </h2>
+      <form action="https://example.com/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" autocomplete="name">
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+        <br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        <br><br>
+
+        <fieldset>
+          <legend>Choose Genre(s)</legend>
+        
+        <input type="checkbox" id="action" name="genre" value="action" > Action<br>
+        <input type="checkbox" id="fantasy" name="genre" value="fantasy"> Fantasy<br>
+        <input type="checkbox" id="adventure" name="genre" value="adventure"> Adventure<br>
+        <input type="checkbox" id="comedy" name="genre" value="comedy"> Comedy<br>
+        </fieldset>
+
+        
+          <label for="anime">Favorite Anime:</label><br>
+          <select id="anime" name="anime" required>
+          <option value="">--select your anime--</option>
+          <option value="demon-slayer">Demon Slayer</option>
+          <option value="one-piece">One Piece</option>
+          <option value="naruto">Naruto</option>
+          </select><br><br>
+
+          <br>
+        
+          <br><br>
+        <fieldset>
+          <legend>Suggest the rating </legend>
+        
+        <input type="radio" id="one" name="rating" value="1"> 1<br>
+        <input type="radio" id="two" name="rating" value="2"> 2<br>
+        <input type="radio" id="three" name="rating" value="3"> 3<br>
+        <input type="radio" id="four" name="rating" value="4"> 4<br>
+        <input type="radio" id="five" name="rating" value="5"> 5<br>
+        
+        </fieldset>
+        <br>
+
+        
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+
+
+      </form>
+    </section>
+  </body>
+</html>
